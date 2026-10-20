@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+    <h1>Formulário de Cadastro de Personagem/Jogador</h1>
+    <form action="">
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p><label for="inomeCompleto">Nome completo: <input type="text" name="nomeCompleto"
+                        placeholder="Digite seu nome" id="inomeCompleto"></label></p>
+            <p><label for="iemail">E-mail: <input type="email" name="email" id="iemail" placeholder="Digite seu E-mail"
+                        required></label></p>
+            <p><label for="isenha">Senha: <input type="password" name="senha" id="isenha" placeholder="Digite sua senha"
+                        required></label></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferências de Jogo</legend>
+            <p>Plataforma favorita</p>
+            <p><label for="ipc"> <input type="radio" name="plataforma" id="ipc"> PC</label></p>
+            <p><label for="iplaystation"> <input type="radio" name="plataforma" id="iplaystation"> PlayStation</label>
+            </p>
+            <p><label for="ixbox"><input type="radio" name="plataforma" id="ixbox"> Xbox</label></p>
+            <p><label for="inintendo"> <input type="radio" name="plataforma" id="inintendo"> Nintendo</label></p>
+
+            <p>Estilos de jogos preferidos</p>
+            <p><label for="iacao"><input type="checkbox" name="jogosPreferidos" id="iacao"> Ação</label></p>
+            <p><label for="irpg"><input type="checkbox" name="jogosPreferidos" id="irpg"> RPG</label></p>
+            <p><label for="iEstrategia"> <input type="checkbox" name="jogosPreferidos" id="iEstrategia">
+                    Estratégia</label></p>
+            <p><label for="iEsportes"> <input type="checkbox" name="jogosPreferidos" id="iEsportes"> Esportes</label>
+            </p>
+
+            <label for="iniveis">Nível de experiência:</label>
+            <select name="inivel" id="nivel">
+                <!-- Opção padrão/placeholder que não pode ser escolhida como resposta válida -->
+                <option value="" disabled selected>-- Selecione seu nível --</option>
+
+                <!-- Opções reais do menu -->
+                <option value="iniciante">Iniciante</option>
+                <option value="intermediario">Intermediário</option>
+                <option value="veterano">Veterano</option>
+                <option value="profissional">Profissional</option>
+            </select>
+        </fieldset> <br>
+        
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+
+</html>

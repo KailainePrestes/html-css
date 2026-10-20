@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form autocomplete="off">
+        <h2>Principais Inputs de Texto e Conteúdo</h2>
+
+        <p>Nome: 
+            <input type="text" name="nome" id="nome"></p>
+        <p>Sobrenome: 
+            <input type="text" name="sobrenome" id="sobrenome"></p>
+        <p>Senha: <input type="password" name="senha"></p>
+        <p>Email: <input type="email" name="email"></p>
+        <p>Numeros: <input type="number" name="idade" min="0" max="120"></p>
+        <p>Telefone: <input type="tel" name="telefone"></p>
+        <p>URL: <input type="url" name="site"></p>
+        <P>Pesquisa: <input type="search" name="busca"></P>
+
+        <h2>Inputs de Seleção e Múltipla Escolha</h2>
+        
+        <p>Checkbox (Caixa de opções)<input type="checkbox" name="newsletter" value="sim"></p>
+        <p><input type="radio" name="genero" value="masculino"> Masculino</p>
+        <p><input type="radio" name="genero" value="feminino"> Feminino</p>
+
+        <h2>Inputs de Data, Hora e Arquivos</h2>
+        <p><input type="date" name="nascimento"></p>
+        <p><input type="time" name="nascimento"></p>
+        <p><input type="datetime-local" name="nascimento"></p>
+
+        <p><input type="file" name="documento"></p>
+
+        <p><input type="color" name="cor_favorita" id="cor_favorita"></p>
+
+        <p><input type="range" name="volume" min="0" max="100"></p>
+
+        <h2>Inputs de Ação (Botões)</h2>
+
+         <p><input type="submit" value="Enviar"></p>
+         <p><input type="reset" value="Limpar"></p>
+         <p><input type="button" value="Clique aqui" onclick="minhaFuncao()"></p>
+         <p><input type="hidden" name="usuario_id" value="12345"></p>
+    </form>
+</body>
+</html>
